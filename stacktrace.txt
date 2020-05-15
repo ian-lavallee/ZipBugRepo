@@ -1,8 +1,8 @@
 Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
-Maven home: /usr/local/google/home/ilavallee/Documents/apache-maven-3.6.3
-Java version: 1.8.0_181-google-v7, vendor: Google Inc., runtime: /usr/local/buildtools/java/jdk8-google-v7-64/jre
-Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "5.2.17-1rodete3-amd64", arch: "amd64", family: "unix"
+Maven home: C:\Maven\apache-maven-3.6.3
+Java version: 1.8.0_251, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk1.8.0_251\jre
+Default locale: en_CA, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 [DEBUG] Created new class realm maven.api
 [DEBUG] Importing foreign packages into class realm maven.api
 [DEBUG]   Imported: javax.annotation.* < plexus.core
@@ -75,12 +75,12 @@ OS name: "linux", version: "5.2.17-1rodete3-amd64", arch: "amd64", family: "unix
 [INFO] Error stacktraces are turned on.
 [DEBUG] Message scheme: color
 [DEBUG] Message styles: debug info warning error success failure strong mojo project
-[DEBUG] Reading global settings from /usr/local/google/home/ilavallee/Documents/apache-maven-3.6.3/conf/settings.xml
-[DEBUG] Reading user settings from /usr/local/google/home/ilavallee/.m2/settings.xml
-[DEBUG] Reading global toolchains from /usr/local/google/home/ilavallee/Documents/apache-maven-3.6.3/conf/toolchains.xml
-[DEBUG] Reading user toolchains from /usr/local/google/home/ilavallee/.m2/toolchains.xml
-[DEBUG] Using local repository at /usr/local/google/home/ilavallee/.m2/repository
-[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /usr/local/google/home/ilavallee/.m2/repository
+[DEBUG] Reading global settings from C:\Maven\apache-maven-3.6.3\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\ianla\.m2\settings.xml
+[DEBUG] Reading global toolchains from C:\Maven\apache-maven-3.6.3\conf\toolchains.xml
+[DEBUG] Reading user toolchains from C:\Users\ianla\.m2\toolchains.xml
+[DEBUG] Using local repository at C:\Users\ianla\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\ianla\.m2\repository
 [INFO] Scanning for projects...
 [DEBUG] Extension realms for project com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT: (none)
 [DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
@@ -305,7 +305,7 @@ OS name: "linux", version: "5.2.17-1rodete3-amd64", arch: "amd64", family: "unix
   <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
 </configuration>
 [DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-assembly-plugin:3.3.0:single (make-assembly)
+[DEBUG] Goal:          org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT:single (make-assembly)
 [DEBUG] Style:         Regular
 [DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
@@ -342,23 +342,574 @@ OS name: "linux", version: "5.2.17-1rodete3-amd64", arch: "amd64", family: "unix
   <workDirectory default-value="${project.build.directory}/assembly/work"/>
 </configuration>
 [DEBUG] =======================================================================
-[WARNING] The POM for com.example:foo:zip:1.0 is missing, no dependency information available
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=979488, ConflictMarker.markTime=499062, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=547552, ConflictIdSorter.topsortTime=537600, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4108409, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=16486339, DefaultDependencyCollector.transformTime=9314618}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1438900, ConflictMarker.markTime=503500, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=716000, ConflictIdSorter.topsortTime=609000, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4473200, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=37577600, DefaultDependencyCollector.transformTime=11044700}
 [DEBUG] com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT
 [DEBUG]    jdom:jdom:jar:1.0:compile
 [DEBUG]    com.example:foo:zip:1.0:runtime
+[DEBUG]    org.apache.commons:commons-compress:jar:1.21-SNAPSHOT:compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ simpleChild ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=375200, ConflictMarker.markTime=182300, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=213300, ConflictIdSorter.topsortTime=32600, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2292800, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=179352600, DefaultDependencyCollector.transformTime=3173900}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@4e25154f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\Users\ianla\Maven\simpleChild\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.mycompany.app:simpleChild:1.0-SNAPSHOT @ C:\Users\ianla\Maven\simpleChild\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\Users\ianla\Maven\simpleChild\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\Windows, env.USERDOMAIN_ROAMINGPROFILE=LAPTOP-DQBGP17U, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.ONEDRIVE=C:\Users\ianla\OneDrive, os.name=Windows 10, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_251\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_251\jre\classes, env.TMPDIR=C:\Users\ianla\AppData\Local\Temp, env.COMPUTERNAME=LAPTOP-DQBGP17U, env.PWD=C:/Users/ianla/Maven/simpleChild, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_251-b08, env.HOMEPATH=\Users\ianla, env.DISPLAY=needs-to-be-defined, user.name=ianla, maven.build.version=Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f), env.SHELL=C:\Program Files\Git\usr\bin\bash.exe, env.DRIVERDATA=C:\Windows\System32\Drivers\DriverData, env.ONEDRIVECONSUMER=C:\Users\ianla\OneDrive, env.MSYSTEM=MINGW64, env.PATH=C:\Users\ianla\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ianla\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\ianla\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Maven\apache-maven-3.6.3\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl, user.language=en, env.EXEPATH=C:\Program Files\Git, env.WINDIR=C:\Windows, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_251\jre\bin, classworlds.conf=C:/Maven/apache-maven-3.6.3/bin/m2.conf, env.MSYSTEM_CHOST=x86_64-w64-mingw32, env.GAMEFIRSTUSERPATH=C:\Users\ianla\AppData\Local\ASUS\GameFirst, java.version=1.8.0_251, env.PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD, user.timezone=, env.MINGW_PREFIX=C:/Program Files/Git/mingw64, env.TEMP=C:\Users\ianla\AppData\Local\Temp, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_251\jre\lib\endorsed, sun.cpu.isalist=amd64, env.HOMEDRIVE=C:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SHLVL=1, env.SYSTEMDRIVE=C:, file.separator=\, env.HOSTNAME=LAPTOP-DQBGP17U, java.specification.name=Java Platform API Specification, maven.conf=C:/Maven/apache-maven-3.6.3/conf, java.class.version=52.0, user.country=CA, java.home=C:\Program Files\Java\jdk1.8.0_251\jre, env.APPDATA=C:\Users\ianla\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, env.OS=Windows_NT, os.version=10.0, env.=::=::\, env.CONFIG_SITE=C:/Program Files/Git/mingw64/etc/config.site, path.separator=;, env.ACLOCAL_PATH=C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal, env.MINGW_PACKAGE_PREFIX=mingw-w64-x86_64, java.vm.version=25.251-b08, user.variant=, env.USERPROFILE=C:\Users\ianla, env.JAVA_HOME=C:/Program Files/Java/jdk1.8.0_251, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TERM=xterm, env.TMP=C:\Users\ianla\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, user.script=, env.MANPATH=C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man, env.ORIGINAL_TMP=C:/Users/ianla/AppData/Local/Temp, user.home=C:\Users\ianla, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.OLDPWD=C:/Users/ianla/Maven/simpleChild, env.SESSIONNAME=Console, java.specification.vendor=Oracle Corporation, library.jansi.path=C:/Maven/apache-maven-3.6.3/lib/jansi-native, java.library.path=C:\Program Files\Java\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\ianla\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ianla\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\ianla\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Maven\apache-maven-3.6.3\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;., java.vendor.url=http://java.oracle.com/, env.NUMBER_OF_PROCESSORS=8, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, env.MAVEN_CMD_LINE_ARGS= -X verify, java.vm.vendor=Oracle Corporation, maven.home=C:\Maven\apache-maven-3.6.3, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X verify, java.class.path=C:/Maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar, env.MSYSTEM_CARCH=x86_64, env.PROGRAMW6432=C:\Program Files, maven.version=3.6.3, env.PROGRAMFILES(X86)=C:\Program Files (x86), java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\LAPTOP-DQBGP17U, java.vm.specification.version=1.8, env.PROCESSOR_ARCHITECTURE=AMD64, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, sun.cpu.endian=little, sun.os.patch.level=, env.HOME=C:\Users\ianla, java.io.tmpdir=C:\Users\ianla\AppData\Local\Temp\, env.PROCESSOR_REVISION=1801, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, maven.multiModuleProjectDirectory=C:/Users/ianla/Maven/simpleChild, env.ORIGINAL_PATH=C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ianla\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\ianla\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Maven\apache-maven-3.6.3\bin, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, env.PLINK_PROTOCOL=ssh, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_251\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, env.MINGW_CHOST=x86_64-w64-mingw32, user.dir=C:\Users\ianla\Maven\simpleChild, env.LOCALAPPDATA=C:\Users\ianla\AppData\Local, env.ORIGINAL_TEMP=C:/Users/ianla/AppData/Local/Temp, env.INFOPATH=C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.GAMEFIRST=C:\Program Files (x86)\ASUS\GameFirst\, env.USERNAME=ianla, file.encoding=Cp1252, env.MSYSTEM_PREFIX=C:/Program Files/Git/mingw64, env.PKG_CONFIG_PATH=C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig, env.USERDOMAIN=LAPTOP-DQBGP17U, java.specification.version=1.8, env.MAVEN_PROJECTBASEDIR=C:/Users/ianla/Maven/simpleChild, env.SSH_ASKPASS=C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass, env.PROCESSOR_LEVEL=23}
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory C:\Users\ianla\Maven\simpleChild\src\main\resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory C:\Users\ianla\Maven\simpleChild\src\main\resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ simpleChild ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=536900, ConflictMarker.markTime=299200, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=181700, ConflictIdSorter.topsortTime=46400, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1676900, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=295367400, DefaultDependencyCollector.transformTime=2772200}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@4e25154f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = C:\Users\ianla\Maven\simpleChild
+[DEBUG]   (f) buildDirectory = C:\Users\ianla\Maven\simpleChild\target
+[DEBUG]   (f) classpathElements = [C:\Users\ianla\Maven\simpleChild\target\classes, C:\Users\ianla\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar, C:\Users\ianla\.m2\repository\org\apache\commons\commons-compress\1.21-SNAPSHOT\commons-compress-1.21-SNAPSHOT.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\Users\ianla\Maven\simpleChild\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = C:\Users\ianla\Maven\simpleChild\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\Users\ianla\Maven\simpleChild\target\classes
+[DEBUG]   (f) projectArtifact = com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [C:\Users\ianla\Maven\simpleChild\src\main\java]
+[DEBUG] Classpath: [C:\Users\ianla\Maven\simpleChild\target\classes
+ C:\Users\ianla\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar
+ C:\Users\ianla\.m2\repository\org\apache\commons\commons-compress\1.21-SNAPSHOT\commons-compress-1.21-SNAPSHOT.jar]
+[DEBUG] Output directory: C:\Users\ianla\Maven\simpleChild\target\classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ simpleChild ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@4e25154f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\Users\ianla\Maven\simpleChild\target\test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.mycompany.app:simpleChild:1.0-SNAPSHOT @ C:\Users\ianla\Maven\simpleChild\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\Users\ianla\Maven\simpleChild\src\test\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\Windows, env.USERDOMAIN_ROAMINGPROFILE=LAPTOP-DQBGP17U, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.ONEDRIVE=C:\Users\ianla\OneDrive, os.name=Windows 10, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_251\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_251\jre\classes, env.TMPDIR=C:\Users\ianla\AppData\Local\Temp, env.COMPUTERNAME=LAPTOP-DQBGP17U, env.PWD=C:/Users/ianla/Maven/simpleChild, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_251-b08, env.HOMEPATH=\Users\ianla, env.DISPLAY=needs-to-be-defined, user.name=ianla, maven.build.version=Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f), env.SHELL=C:\Program Files\Git\usr\bin\bash.exe, env.DRIVERDATA=C:\Windows\System32\Drivers\DriverData, env.ONEDRIVECONSUMER=C:\Users\ianla\OneDrive, env.MSYSTEM=MINGW64, env.PATH=C:\Users\ianla\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ianla\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\ianla\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Maven\apache-maven-3.6.3\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl, user.language=en, env.EXEPATH=C:\Program Files\Git, env.WINDIR=C:\Windows, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_251\jre\bin, classworlds.conf=C:/Maven/apache-maven-3.6.3/bin/m2.conf, env.MSYSTEM_CHOST=x86_64-w64-mingw32, env.GAMEFIRSTUSERPATH=C:\Users\ianla\AppData\Local\ASUS\GameFirst, java.version=1.8.0_251, env.PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD, user.timezone=, env.MINGW_PREFIX=C:/Program Files/Git/mingw64, env.TEMP=C:\Users\ianla\AppData\Local\Temp, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_251\jre\lib\endorsed, sun.cpu.isalist=amd64, env.HOMEDRIVE=C:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SHLVL=1, env.SYSTEMDRIVE=C:, file.separator=\, env.HOSTNAME=LAPTOP-DQBGP17U, java.specification.name=Java Platform API Specification, maven.conf=C:/Maven/apache-maven-3.6.3/conf, java.class.version=52.0, user.country=CA, java.home=C:\Program Files\Java\jdk1.8.0_251\jre, env.APPDATA=C:\Users\ianla\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, env.OS=Windows_NT, os.version=10.0, env.=::=::\, env.CONFIG_SITE=C:/Program Files/Git/mingw64/etc/config.site, path.separator=;, env.ACLOCAL_PATH=C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal, env.MINGW_PACKAGE_PREFIX=mingw-w64-x86_64, java.vm.version=25.251-b08, user.variant=, env.USERPROFILE=C:\Users\ianla, env.JAVA_HOME=C:/Program Files/Java/jdk1.8.0_251, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TERM=xterm, env.TMP=C:\Users\ianla\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, user.script=, env.MANPATH=C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man, env.ORIGINAL_TMP=C:/Users/ianla/AppData/Local/Temp, user.home=C:\Users\ianla, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.OLDPWD=C:/Users/ianla/Maven/simpleChild, env.SESSIONNAME=Console, java.specification.vendor=Oracle Corporation, library.jansi.path=C:/Maven/apache-maven-3.6.3/lib/jansi-native, java.library.path=C:\Program Files\Java\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\ianla\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ianla\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\ianla\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Maven\apache-maven-3.6.3\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;., java.vendor.url=http://java.oracle.com/, env.NUMBER_OF_PROCESSORS=8, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, env.MAVEN_CMD_LINE_ARGS= -X verify, java.vm.vendor=Oracle Corporation, maven.home=C:\Maven\apache-maven-3.6.3, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X verify, java.class.path=C:/Maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar, env.MSYSTEM_CARCH=x86_64, env.PROGRAMW6432=C:\Program Files, maven.version=3.6.3, env.PROGRAMFILES(X86)=C:\Program Files (x86), java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\LAPTOP-DQBGP17U, java.vm.specification.version=1.8, env.PROCESSOR_ARCHITECTURE=AMD64, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, sun.cpu.endian=little, sun.os.patch.level=, env.HOME=C:\Users\ianla, java.io.tmpdir=C:\Users\ianla\AppData\Local\Temp\, env.PROCESSOR_REVISION=1801, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, maven.multiModuleProjectDirectory=C:/Users/ianla/Maven/simpleChild, env.ORIGINAL_PATH=C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ianla\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\ianla\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Maven\apache-maven-3.6.3\bin, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, env.PLINK_PROTOCOL=ssh, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_251\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, env.MINGW_CHOST=x86_64-w64-mingw32, user.dir=C:\Users\ianla\Maven\simpleChild, env.LOCALAPPDATA=C:\Users\ianla\AppData\Local, env.ORIGINAL_TEMP=C:/Users/ianla/AppData/Local/Temp, env.INFOPATH=C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.GAMEFIRST=C:\Program Files (x86)\ASUS\GameFirst\, env.USERNAME=ianla, file.encoding=Cp1252, env.MSYSTEM_PREFIX=C:/Program Files/Git/mingw64, env.PKG_CONFIG_PATH=C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig, env.USERDOMAIN=LAPTOP-DQBGP17U, java.specification.version=1.8, env.MAVEN_PROJECTBASEDIR=C:/Users/ianla/Maven/simpleChild, env.SSH_ASKPASS=C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass, env.PROCESSOR_LEVEL=23}
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory C:\Users\ianla\Maven\simpleChild\src\test\resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory C:\Users\ianla\Maven\simpleChild\src\test\resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ simpleChild ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@4e25154f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = C:\Users\ianla\Maven\simpleChild
+[DEBUG]   (f) buildDirectory = C:\Users\ianla\Maven\simpleChild\target
+[DEBUG]   (f) classpathElements = [C:\Users\ianla\Maven\simpleChild\target\test-classes, C:\Users\ianla\Maven\simpleChild\target\classes, C:\Users\ianla\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar, C:\Users\ianla\.m2\repository\org\apache\commons\commons-compress\1.21-SNAPSHOT\commons-compress-1.21-SNAPSHOT.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\Users\ianla\Maven\simpleChild\src\test\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = C:\Users\ianla\Maven\simpleChild\target\generated-test-sources\test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\Users\ianla\Maven\simpleChild\target\test-classes
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ simpleChild ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=254300, ConflictMarker.markTime=115200, ConflictMarker.nodeCount=132, ConflictIdSorter.graphTime=187200, ConflictIdSorter.topsortTime=25800, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=723700, ConflictResolver.conflictItemCount=77, DefaultDependencyCollector.collectTime=59020500, DefaultDependencyCollector.transformTime=1339400}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:2.12.4:compile (version managed from default)
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile (version managed from default)
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.8:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile (version managed from default)
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:test (scope managed from default) (version managed from default)
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile (exclusions managed from default)
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.12.4
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.8
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4, parent: sun.misc.Launcher$AppClassLoader@4e25154f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test' with basic configurator -->
+[DEBUG]   (s) basedir = C:\Users\ianla\Maven\simpleChild
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = C:\Users\ianla\Maven\simpleChild\target\classes
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =       id: local
+      url: file:///C:/Users/ianla/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.12.4:, org.apache.maven:maven-plugin-api=org.apache.maven:maven-plugin-api:jar:2.0.9:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.12.4:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:3.0.8:compile, org.apache.maven:maven-artifact=org.apache.maven:maven-artifact:jar:2.0.9:compile, org.apache.maven:maven-project=org.apache.maven:maven-project:jar:2.0.9:compile, org.apache.maven:maven-settings=org.apache.maven:maven-settings:jar:2.0.9:compile, org.apache.maven:maven-profile=org.apache.maven:maven-profile:jar:2.0.9:compile, org.apache.maven:maven-model=org.apache.maven:maven-model:jar:2.0.9:compile, org.apache.maven:maven-artifact-manager=org.apache.maven:maven-artifact-manager:jar:2.0.9:compile, org.apache.maven:maven-plugin-registry=org.apache.maven:maven-plugin-registry:jar:2.0.9:compile, org.codehaus.plexus:plexus-container-default=org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, org.apache.maven:maven-core=org.apache.maven:maven-core:jar:2.0.9:compile, org.apache.maven:maven-plugin-parameter-documenter=org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile, org.apache.maven:maven-repository-metadata=org.apache.maven:maven-repository-metadata:jar:2.0.9:compile, org.apache.maven:maven-error-diagnostics=org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile, org.apache.maven:maven-plugin-descriptor=org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile, org.apache.maven:maven-monitor=org.apache.maven:maven-monitor:jar:2.0.9:compile, classworlds:classworlds=classworlds:classworlds:jar:1.1:compile, org.apache.maven:maven-toolchain=org.apache.maven:maven-toolchain:jar:2.0.9:compile, org.apache.maven.plugin-tools:maven-plugin-annotations=org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) projectArtifactMap = {jdom:jdom=jdom:jdom:jar:1.0:compile, com.example:foo=com.example:foo:zip:1.0:runtime, org.apache.commons:commons-compress=org.apache.commons:commons-compress:jar:1.21-SNAPSHOT:compile}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [      id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = C:\Users\ianla\Maven\simpleChild\target\surefire-reports
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) skip = false
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) testClassesDirectory = C:\Users\ianla\Maven\simpleChild\target\test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = C:\Users\ianla\Maven\simpleChild\src\test\java
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = C:\Users\ianla\Maven\simpleChild
+[DEBUG]   (s) project = MavenProject: com.mycompany.app:simpleChild:1.0-SNAPSHOT @ C:\Users\ianla\Maven\simpleChild\pom.xml
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG] -- end configuration --
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ simpleChild ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=152200, ConflictMarker.markTime=69200, ConflictMarker.nodeCount=74, ConflictIdSorter.graphTime=129800, ConflictIdSorter.topsortTime=36600, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=831800, ConflictResolver.conflictItemCount=70, DefaultDependencyCollector.collectTime=38660800, DefaultDependencyCollector.transformTime=1265700}
+[DEBUG] org.apache.maven.plugins:maven-jar-plugin:jar:2.4
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:runtime
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]       org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]             org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]          org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]          commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]          org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]          org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.15:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.0.2:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-jar-plugin:jar:2.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.15
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.2
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-jar-plugin:2.4:jar from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-jar-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@4e25154f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-jar-plugin:2.4:jar' with basic configurator -->
+[DEBUG]   (f) classesDirectory = C:\Users\ianla\Maven\simpleChild\target\classes
+[DEBUG]   (f) defaultManifestFile = C:\Users\ianla\Maven\simpleChild\target\classes\META-INF\MANIFEST.MF
+[DEBUG]   (f) finalName = simpleChild-1.0-SNAPSHOT
+[DEBUG]   (f) forceCreation = false
+[DEBUG]   (f) outputDirectory = C:\Users\ianla\Maven\simpleChild\target
+[DEBUG]   (f) project = MavenProject: com.mycompany.app:simpleChild:1.0-SNAPSHOT @ C:\Users\ianla\Maven\simpleChild\pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG]   (f) skipIfEmpty = false
+[DEBUG]   (f) useDefaultManifestFile = false
+[DEBUG] -- end configuration --
+[DEBUG] isUp2date: true
+[DEBUG] Archive C:\Users\ianla\Maven\simpleChild\target\simpleChild-1.0-SNAPSHOT.jar is uptodate.
+[INFO] 
+[INFO] --- maven-assembly-plugin:3.3.1-SNAPSHOT:single (make-assembly) @ simpleChild ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=246800, ConflictMarker.markTime=120900, ConflictMarker.nodeCount=141, ConflictIdSorter.graphTime=99600, ConflictIdSorter.topsortTime=71000, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1787000, ConflictResolver.conflictItemCount=125, DefaultDependencyCollector.collectTime=391774100, DefaultDependencyCollector.transformTime=2398100}
+[DEBUG] org.apache.maven.plugins:maven-assembly-plugin:jar:3.3.1-SNAPSHOT
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:2.0.0:compile (version managed from default)
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.0:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-artifact-transfer:jar:0.11.0:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.25:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:4.2.1:compile
+[DEBUG]       org.apache.commons:commons-compress:jar:1.19:compile
+[DEBUG]       org.iq80.snappy:snappy:jar:0.4:compile
+[DEBUG]       org.tukaani:xz:jar:1.8:runtime
+[DEBUG]    org.apache.maven.shared:file-management:jar:3.0.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-io:jar:3.0.0:compile
+[DEBUG]       org.apache.maven:maven-compat:jar:3.0:compile
+[DEBUG]       org.apache.maven.wagon:wagon-provider-api:jar:2.10:compile
+[DEBUG]    commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-io:jar:3.2.0:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:3.5.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.3.0:compile
+[DEBUG]    commons-codec:commons-codec:jar:1.6:compile
+[DEBUG]    jaxen:jaxen:jar:1.2.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.plugins:maven-assembly-plugin:jar:3.3.1-SNAPSHOT
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:2.0.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.1.0
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.11.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.25
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:4.2.1
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.19
+[DEBUG]   Included: org.iq80.snappy:snappy:jar:0.4
+[DEBUG]   Included: org.tukaani:xz:jar:1.8
+[DEBUG]   Included: org.apache.maven.shared:file-management:jar:3.0.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-io:jar:3.0.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:3.2.0
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:3.5.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.3.0
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.6
+[DEBUG]   Included: jaxen:jaxen:jar:1.2.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT:single from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@4e25154f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT:single' with basic configurator -->
+[DEBUG]   (s) appendAssemblyId = true
+[DEBUG]   (f) attach = true
+[DEBUG]   (s) basedir = C:\Users\ianla\Maven\simpleChild
+[DEBUG]   (s) descriptorRefs = [jar-with-dependencies]
+[DEBUG]   (f) dryRun = false
+[DEBUG]   (s) finalName = simpleChild-1.0-SNAPSHOT
+[DEBUG]   (f) ignoreDirFormatExtensions = true
+[DEBUG]   (f) ignoreMissingDescriptor = false
+[DEBUG]   (f) ignorePermissions = false
+[DEBUG]   (f) includeProjectBuildFilters = true
+[DEBUG]   (s) localRepository =       id: local
+      url: file:///C:/Users/ianla/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@578524c3
+[DEBUG]   (s) outputDirectory = C:\Users\ianla\Maven\simpleChild\target
+[DEBUG]   (f) plugin = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugins.assembly.mojos.HelpMojo', role hint: 'org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugins.assembly.mojos.SingleAssemblyMojo', role hint: 'org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT:single'
+---
+[DEBUG]   (f) project = MavenProject: com.mycompany.app:simpleChild:1.0-SNAPSHOT @ C:\Users\ianla\Maven\simpleChild\pom.xml
+[DEBUG]   (s) reactorProjects = [MavenProject: com.mycompany.app:simpleChild:1.0-SNAPSHOT @ C:\Users\ianla\Maven\simpleChild\pom.xml]
+[DEBUG]   (f) recompressZippedFiles = true
+[DEBUG]   (f) remoteRepositories = [      id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => daily]
+]
+[DEBUG]   (f) runOnlyAtExecutionRoot = false
+[DEBUG]   (s) siteDirectory = C:\Users\ianla\Maven\simpleChild\target\site
+[DEBUG]   (f) skipAssembly = false
+[DEBUG]   (s) tarLongFileMode = warn
+[DEBUG]   (s) tempRoot = C:\Users\ianla\Maven\simpleChild\target\archive-tmp
+[DEBUG]   (f) updateOnly = false
+[DEBUG]   (f) useJvmChmod = false
+[DEBUG]   (s) workDirectory = C:\Users\ianla\Maven\simpleChild\target\assembly\work
+[DEBUG] -- end configuration --
+[DEBUG] After assembly is interpolated:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.0 http://maven.apache.org/xsd/assembly-2.1.0.xsd" xmlns="http://maven.apache.org/ASSEMBLY/2.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <id>jar-with-dependencies</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>/</outputDirectory>
+      <unpack>true</unpack>
+    </dependencySet>
+  </dependencySets>
+</assembly>
+
+
+
+519
+[DEBUG] All known ContainerDescriptorHandler components: [plexus, file-aggregator, metaInf-services, metaInf-spring]
+[DEBUG] Dependencies for project: com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT are:
+jdom:jdom:jar:1.0:compile
+com.example:foo:zip:1.0:runtime
+org.apache.commons:commons-compress:jar:1.21-SNAPSHOT:compile
+[DEBUG] Processing DependencySet (output=/)
+[DEBUG] Filtering dependency artifacts WITHOUT transitive dependency path information.
+[DEBUG] Adding 4 dependency artifacts.
+[DEBUG] Extension realms for project jdom:jdom:jar:1.0: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Adding dependency artifact jdom:jdom:jar:1.0.
+[DEBUG] Unpacking artifact contents for: jdom:jdom:jar:1.0:compile to: 
+[DEBUG] includes:
+**/*
+
+[DEBUG] excludes:
+none
+
+[DEBUG] Adding archived file-set in: C:\Users\ianla\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar to archive location: 
+[DEBUG] Extension realms for project com.example:foo:jar:1.0: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Adding dependency artifact com.example:foo:zip:1.0.
+[DEBUG] Unpacking artifact contents for: com.example:foo:zip:1.0:runtime to: 
+[DEBUG] includes:
+**/*
+
+[DEBUG] excludes:
+none
+
+[DEBUG] Adding archived file-set in: C:\Users\ianla\.m2\repository\com\example\foo\1.0\foo-1.0.zip to archive location: 
+[DEBUG] Extension realms for project org.apache.commons:commons-compress:jar:1.21-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.apache.commons:commons-parent:pom:48: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.apache:apache:pom:21: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Adding dependency artifact org.apache.commons:commons-compress:jar:1.21-SNAPSHOT.
+[DEBUG] Unpacking artifact contents for: org.apache.commons:commons-compress:jar:1.21-SNAPSHOT:compile to: 
+[DEBUG] includes:
+**/*
+
+[DEBUG] excludes:
+none
+
+[DEBUG] Adding archived file-set in: C:\Users\ianla\.m2\repository\org\apache\commons\commons-compress\1.21-SNAPSHOT\commons-compress-1.21-SNAPSHOT.jar to archive location: 
+[DEBUG] Extension realms for project com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Adding dependency artifact com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT.
+[DEBUG] Unpacking artifact contents for: com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT to: 
+[DEBUG] includes:
+**/*
+
+[DEBUG] excludes:
+none
+
+[DEBUG] Adding archived file-set in: C:\Users\ianla\Maven\simpleChild\target\simpleChild-1.0-SNAPSHOT.jar to archive location: 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.585 s
-[INFO] Finished at: 2020-05-15T16:36:14Z
+[INFO] Total time:  2.774 s
+[INFO] Finished at: 2020-05-15T13:49:40-04:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal on project simpleChild: Could not resolve dependencies for project com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT: Failure to find com.example:foo:zip:1.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced -> [Help 1]
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal on project simpleChild: Could not resolve dependencies for project com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT: Failure to find com.example:foo:zip:1.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies (LifecycleDependencyResolver.java:269)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.resolveProjectDependencies (LifecycleDependencyResolver.java:147)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.ensureDependenciesAreResolved (MojoExecutor.java:248)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:202)
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT:single (make-assembly) on project simpleChild: Failed to create assembly: Error creating assembly archive jar-with-dependencies: Central directory is empty, can't expand corrupt archive. Full name is: simpleChild-1.0-SNAPSHOT-jar-with-dependencies -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-assembly-plugin:3.3.1-SNAPSHOT:single (make-assembly) on project simpleChild: Failed to create assembly: Error creating assembly archive jar-with-dependencies: Central directory is empty, can't expand corrupt archive. Full name is: simpleChild-1.0-SNAPSHOT-jar-with-dependencies
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
@@ -379,12 +930,11 @@ org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal o
     at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
     at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
     at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
-Caused by: org.apache.maven.project.DependencyResolutionException: Could not resolve dependencies for project com.mycompany.app:simpleChild:jar:1.0-SNAPSHOT: Failure to find com.example:foo:zip:1.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
-    at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve (DefaultProjectDependenciesResolver.java:209)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies (LifecycleDependencyResolver.java:243)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.resolveProjectDependencies (LifecycleDependencyResolver.java:147)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.ensureDependenciesAreResolved (MojoExecutor.java:248)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:202)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Failed to create assembly: Error creating assembly archive jar-with-dependencies: Central directory is empty, can't expand corrupt archive. Full name is: simpleChild-1.0-SNAPSHOT-jar-with-dependencies
+    at org.apache.maven.plugins.assembly.mojos.AbstractAssemblyMojo.execute (AbstractAssemblyMojo.java:578)
+    at org.apache.maven.plugins.assembly.mojos.SingleAssemblyMojo.execute (SingleAssemblyMojo.java:61)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
@@ -405,13 +955,12 @@ Caused by: org.apache.maven.project.DependencyResolutionException: Could not res
     at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
     at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
     at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
-Caused by: org.eclipse.aether.resolution.DependencyResolutionException: Failure to find com.example:foo:zip:1.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
-    at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies (DefaultRepositorySystem.java:357)
-    at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve (DefaultProjectDependenciesResolver.java:202)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies (LifecycleDependencyResolver.java:243)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.resolveProjectDependencies (LifecycleDependencyResolver.java:147)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.ensureDependenciesAreResolved (MojoExecutor.java:248)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:202)
+Caused by: org.apache.maven.plugins.assembly.archive.ArchiveCreationException: Error creating assembly archive jar-with-dependencies: Central directory is empty, can't expand corrupt archive.
+    at org.apache.maven.plugins.assembly.archive.DefaultAssemblyArchiver.createArchive (DefaultAssemblyArchiver.java:191)
+    at org.apache.maven.plugins.assembly.mojos.AbstractAssemblyMojo.execute (AbstractAssemblyMojo.java:522)
+    at org.apache.maven.plugins.assembly.mojos.SingleAssemblyMojo.execute (SingleAssemblyMojo.java:61)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
@@ -432,15 +981,17 @@ Caused by: org.eclipse.aether.resolution.DependencyResolutionException: Failure 
     at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
     at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
     at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
-Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: Failure to find com.example:foo:zip:1.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
-    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve (DefaultArtifactResolver.java:424)
-    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts (DefaultArtifactResolver.java:229)
-    at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies (DefaultRepositorySystem.java:340)
-    at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve (DefaultProjectDependenciesResolver.java:202)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies (LifecycleDependencyResolver.java:243)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.resolveProjectDependencies (LifecycleDependencyResolver.java:147)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.ensureDependenciesAreResolved (MojoExecutor.java:248)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:202)
+Caused by: org.codehaus.plexus.archiver.ArchiverException: Central directory is empty, can't expand corrupt archive.
+    at org.codehaus.plexus.archiver.AbstractArchiver$1.hasNext (AbstractArchiver.java:564)
+    at org.apache.maven.plugins.assembly.filter.ComponentsXmlArchiverFileFilter.finalizeArchiveCreation (ComponentsXmlArchiverFileFilter.java:140)
+    at org.codehaus.plexus.archiver.AbstractArchiver.runArchiveFinalizers (AbstractArchiver.java:1021)
+    at org.codehaus.plexus.archiver.AbstractArchiver.createArchive (AbstractArchiver.java:1040)
+    at org.apache.maven.plugins.assembly.archive.archiver.AssemblyProxyArchiver.createArchive (AssemblyProxyArchiver.java:444)
+    at org.apache.maven.plugins.assembly.archive.DefaultAssemblyArchiver.createArchive (DefaultAssemblyArchiver.java:186)
+    at org.apache.maven.plugins.assembly.mojos.AbstractAssemblyMojo.execute (AbstractAssemblyMojo.java:522)
+    at org.apache.maven.plugins.assembly.mojos.SingleAssemblyMojo.execute (SingleAssemblyMojo.java:61)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
@@ -461,19 +1012,26 @@ Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: Failure to
     at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
     at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
     at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
-Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Failure to find com.example:foo:zip:1.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
-    at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException (DefaultUpdateCheckManager.java:218)
-    at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact (DefaultUpdateCheckManager.java:193)
-    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads (DefaultArtifactResolver.java:559)
-    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads (DefaultArtifactResolver.java:483)
-    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve (DefaultArtifactResolver.java:401)
-    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts (DefaultArtifactResolver.java:229)
-    at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies (DefaultRepositorySystem.java:340)
-    at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve (DefaultProjectDependenciesResolver.java:202)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies (LifecycleDependencyResolver.java:243)
-    at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.resolveProjectDependencies (LifecycleDependencyResolver.java:147)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.ensureDependenciesAreResolved (MojoExecutor.java:248)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:202)
+Caused by: java.io.IOException: Central directory is empty, can't expand corrupt archive.
+    at org.apache.commons.compress.archivers.zip.ZipFile.populateFromCentralDirectory (ZipFile.java:701)
+    at org.apache.commons.compress.archivers.zip.ZipFile.<init> (ZipFile.java:363)
+    at org.apache.commons.compress.archivers.zip.ZipFile.<init> (ZipFile.java:250)
+    at org.apache.commons.compress.archivers.zip.ZipFile.<init> (ZipFile.java:219)
+    at org.apache.commons.compress.archivers.zip.ZipFile.<init> (ZipFile.java:202)
+    at org.codehaus.plexus.archiver.zip.PlexusArchiverZipFileResourceCollection.getEntries (PlexusArchiverZipFileResourceCollection.java:35)
+    at org.codehaus.plexus.components.io.resources.AbstractPlexusIoArchiveResourceCollection$FilteringIterator.<init> (AbstractPlexusIoArchiveResourceCollection.java:73)
+    at org.codehaus.plexus.components.io.resources.AbstractPlexusIoArchiveResourceCollection.getResources (AbstractPlexusIoArchiveResourceCollection.java:67)
+    at org.codehaus.plexus.components.io.resources.proxy.PlexusIoProxyResourceCollection.getResources (PlexusIoProxyResourceCollection.java:184)
+    at org.codehaus.plexus.archiver.AbstractArchiver$1.hasNext (AbstractArchiver.java:560)
+    at org.apache.maven.plugins.assembly.filter.ComponentsXmlArchiverFileFilter.finalizeArchiveCreation (ComponentsXmlArchiverFileFilter.java:140)
+    at org.codehaus.plexus.archiver.AbstractArchiver.runArchiveFinalizers (AbstractArchiver.java:1021)
+    at org.codehaus.plexus.archiver.AbstractArchiver.createArchive (AbstractArchiver.java:1040)
+    at org.apache.maven.plugins.assembly.archive.archiver.AssemblyProxyArchiver.createArchive (AssemblyProxyArchiver.java:444)
+    at org.apache.maven.plugins.assembly.archive.DefaultAssemblyArchiver.createArchive (DefaultAssemblyArchiver.java:186)
+    at org.apache.maven.plugins.assembly.mojos.AbstractAssemblyMojo.execute (AbstractAssemblyMojo.java:522)
+    at org.apache.maven.plugins.assembly.mojos.SingleAssemblyMojo.execute (SingleAssemblyMojo.java:61)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
@@ -497,4 +1055,4 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Failure to fin
 [ERROR] 
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
